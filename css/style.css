@@ -9,6 +9,7 @@
 html{
     width: 100%;
     scroll-behavior: smooth;
+    background-color: aliceblue;
 
 }
 
@@ -301,8 +302,6 @@ html{
     margin-right: 10px;
 }
 
-
-
 /* End of Home Info Content */
 
 /* About Content */
@@ -400,5 +399,37 @@ h4{
     max-width: 400px;
 }
 
-
 /* End of About Content */
+
+/* Footer */
+footer{
+    position: relative;
+    margin-top: 20px;
+    height: 20vh;
+    width: 100%;
+    background-color: #03192e;
+}
+
+.footer-social-links{
+    display: flex;
+    justify-content: center;
+    /* margin: auto; */
+}
+
+.footer-social-links a i{
+    color: white;
+    margin: 10px;
+}
+
+.footer-copy-right{
+    height: 5vh;
+    width: 100%;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* End of Footer */
