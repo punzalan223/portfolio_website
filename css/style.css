@@ -554,6 +554,7 @@ right: 49px;
     border: 1px solid #ddd;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
+    transition: .2s;
 }
 
 .img-card-content{
@@ -590,7 +591,7 @@ max-width: 1200px;
 margin: auto;
 display: flex;
 box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+rgba(0, 0, 0, 0.22) 0px 15px 12px;
 border-radius: 20px 20px 0 0;
 z-index: 1;
 }
@@ -649,7 +650,7 @@ z-index: 1;
 
 .contact-email-content {
 height: 100%;
-min-width: 800px;
+width: 100%;
 border-top-right-radius: 20px;
 background-color: aliceblue;
 padding: 50px;
@@ -660,7 +661,8 @@ display: flex;
 }
 
 .email-group-content {
-width: 350px;
+    width: 100%;
+max-width: 350px;
 margin-bottom: 10px;
 padding: 10px;
 }
@@ -808,6 +810,24 @@ color: #c7c7ca;
 .my-relevant-experience {
     padding: 10px 0;
 }
+}
+
+@media only screen and (max-width: 1200px) {
+    .contact-email-header{
+        display: none;
+    }
+
+    .contact-email-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 20px;
+        border: 1px solid #ddd;
+    }
+
+    .contact-email{
+        box-shadow: none;
+    }
 }
 
 /* End of Media Queries */
