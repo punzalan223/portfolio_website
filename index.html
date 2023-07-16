@@ -19,7 +19,7 @@
 
 </style>
 <body>
-    <section class="home-content">
+    <section class="home-content" id="home-content">
         <div class="circles">
             <div></div>
             <div></div>
@@ -34,6 +34,12 @@
         </div>
         <div class="navbar">
             <i class="fa-solid fa-bars" id="hamburger-menu"></i>
+            <div class="hamburger-menu-content">
+                <ul><li><a href="#home-content">Home</a></li></ul>
+                <ul><li><a href="#about-content">About</a></li></ul>
+                <ul><li><a href="#works-content">Works</a></li></ul>
+                <ul><li><a href="#contact-content">Contact</a></li></ul>
+            </div>
             <div class="navbar-content">
                 <div class="logo">
                     <a href=""><span>Patwicku</span></a>
@@ -41,7 +47,7 @@
                 <div class="a-links">
                     <ul>
                         <li>
-                            <a href="">Home</a>
+                            <a href="#home-content">Home</a>
                         </li>
                     </ul>
                     <ul>
@@ -71,8 +77,10 @@
                 <P>A SOFTWARE DEVELOPER</P>
                 <P>BASED IN THE PHILIPPINES</P>
                 <span id="home-my-skills">WEB DESIGN * DEVELOPMENT * WEBFLOW</span>
-                <a id="my-cv" href="/patrick_punzalan__resume.pdf" download>Download my resume</a>
-                <a id="my-project-discussion">Let's talk about your project</a>
+                <div class="home-my-info-btns">
+                    <a id="my-cv" href="/patrick_punzalan__resume.pdf" download>Download my resume</a>
+                    <a id="my-project-discussion">Let's talk about your project</a>
+                </div>
                 <div class="social-media-links">
                     <a href="https://www.facebook.com/patwicku/" target="_blank"><i class="fab fa-facebook" style="font-size: 33px;"></i></a>
                     <a href="https://www.instagram.com/patwickku/" target="_blank"><i class="fa-brands fa-instagram" style="font-size: 35px;"></i></a>
@@ -164,29 +172,6 @@
                     <img src="/img/c++.png" alt="">
                 </div>
             </div>
-            <!-- <div class="about-me-friends">
-                <div style="text-align: center; margin: 25px 0;">
-                    <p class="label-header">Testimonials</p>
-                </div>
-                <div class="testimonial-content">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="testimonial-card">
-                                <div class="testimonial-card-image">
-                                    <img src="/img/mobs.jpg" alt="">
-                                    <p>John Adison Aquino</p>
-                                    <p>Student</p>
-                                </div>
-                                <div class="testimonial-card-message">
-                                    <p class="t-quotation t-q-f">"</p>
-                                    <p class="t-message">I stumbled upon this portfolio website and was blown away by the creativity and innovation showcased in the designs. The attention to detail and seamless user experience truly set it apart. I would highly recommend this talented designer to anyone looking for exceptional work that leaves a lasting impression</p>
-                                    <p class="t-quotation t-q-e">"</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </section>
     <section class="works-content" id="works-content">
@@ -219,7 +204,27 @@
                     <p>Web Based Face Recognition System</p>
                     <p>Deployed: No</p>
                     <p>Website Functionality: Frontend and Backend</p>
-                    <p>Team No</p>
+                    <p>Team: Yes</p>
+                </div>
+            </div>
+            <div class="img-card">
+                <img src="/img/DEVP system.jpg" alt="">
+                <div class="img-card-content">
+                    <p>DEVP System</p>
+                    <p>Deployed: Yes</p>
+                    <p>Website Functionality: Frontend and Backend</p>
+                    <p>Team: No</p>
+                    <p style="color: aquamarine;">Company Project</p>
+                </div>
+            </div>
+            <div class="img-card">
+                <img src="/img/EGC system.jpg" alt="">
+                <div class="img-card-content">
+                    <p>EGC System</p>
+                    <p>Deployed: Yes</p>
+                    <p>Website Functionality: Frontend and Backend</p>
+                    <p>Team: No</p>
+                    <p style="color: aquamarine;">Company Project</p>
                 </div>
             </div>
         </div>
@@ -282,6 +287,19 @@
             </div>
         </div>
     </section>
+    <section class="buy-me-a-coffee" id="buy-me-a-coffee">
+        <div class="coffee-content">
+            <div class="coffee-img" style=" max-height: 600px; max-width: 800px;">
+                <img src="/img/buy-me-a-coffee-cartoon.jpg" alt="" style="width: 100%; filter: drop-shadow(0 0 0.75rem rgb(219,182,130));">
+            </div>
+            <div class="coffee-content-qr">
+                <p style="font-size: 22px; margin-top: 25px; margin-bottom: 50px;">Buy Me a Coffee, I Appreciate It!</p>
+                <img src="/img/buy-me-a-coffee-qr.jpg" alt="" width="150px" style="filter: drop-shadow(0 0 0.75rem rgb(219,182,130));">
+                <p style="margin-top: 5px; margin-bottom: 25px;">Gcash QR Code</p>
+                <p style="text-indent: 75px;">Thank you for visiting my website and for your support. If you find value in the content I provide or if you simply want to show your appreciation, you can buy me a coffee. Your support is greatly appreciated, and I'm grateful for every cup of coffee that comes my way.</p>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="footer-main-content">
             <div class="footer-logo">
@@ -294,17 +312,16 @@
                     <p>Email: punzalan2233@gmail.com</p>
                 </div>
                 <div class="footer-personal-about-potfolio">
-                    <p>This portfolio website showcases my dedication to exploration and learning. With a love for reading, a commitment to staying active, a passion for technology, and a penchant for gaming.</p>
+                    <p>This portfolio website showcases my dedication to exploration and learning. With a love for reading, a commitment to staying active and a passion for technology.</p>
                 </div>
                 <div class="footer-personal-test">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis in quasi voluptate ad suscipit ipsa magni possimus molestias asperiores quibusdam.
+                    <div class="footer-social-links">
+                        <a href="https://www.facebook.com/patwicku/" target="_blank"><i class="fab fa-facebook" style="font-size: 33px;"></i></a>
+                        <a href="https://www.instagram.com/patwickku/" target="_blank"><i class="fa-brands fa-instagram" style="font-size: 35px;"></i></a>
+                        <a href="https://twitter.com/patwickku" target="_blank"><i class="fa-brands fa-square-twitter" style="font-size: 35px;"></i></i></a>
+                        <a href="https://www.linkedin.com/in/patrick-lester-punzalan-077546243/" target="_blank"><i class="fa-brands fa-linkedin" style="font-size: 35px;"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="footer-social-links">
-                <a href="https://www.facebook.com/patwicku/" target="_blank"><i class="fab fa-facebook" style="font-size: 33px;"></i></a>
-                <a href="https://www.instagram.com/patwickku/" target="_blank"><i class="fa-brands fa-instagram" style="font-size: 35px;"></i></a>
-                <a href="https://twitter.com/patwickku" target="_blank"><i class="fa-brands fa-square-twitter" style="font-size: 35px;"></i></i></a>
-                <a href="https://www.linkedin.com/in/patrick-lester-punzalan-077546243/" target="_blank"><i class="fa-brands fa-linkedin" style="font-size: 35px;"></i></a>
             </div>
         </div>
     </footer>
@@ -313,14 +330,22 @@
     </div>
 
     <script>
+
         $(document).ready(function() {
             $('.circles div').each(function() {
                 $(this).css('left', Math.floor(Math.random() * 100) + '%');
             });
         });
 
-        
+        $('#hamburger-menu').click(function(){
+            $('.hamburger-menu-content').slideToggle('slow');
+        });
 
+        $(window).resize(function(){
+            if($(window).width()>652){
+                $('.hamburger-menu-content').hide();
+            };
+        });
     </script>
 </body>
 </html>
