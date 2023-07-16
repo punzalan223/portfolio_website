@@ -325,6 +325,7 @@ display: flex;
 justify-content: flex-end;
 height: 100%;
 width: 50%;
+z-index: -1;
 }
 
 .home-my-pic img {
@@ -353,7 +354,6 @@ font-size: 15px;
 .social-media-links {
 display: flex;
 margin-top: 35px;
-z-index: -1;
 }
 
 .social-media-links a {
