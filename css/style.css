@@ -7,7 +7,8 @@
 }
 
 html {
-    
+    width: 100%;
+    box-sizing: border-box;
     scroll-behavior: smooth;
     background-color: aliceblue;
 }
@@ -898,6 +899,13 @@ text-decoration: none;
 
     .my-education ul li p{
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    html{
+        position: relative;
+        min-width: 450px;
     }
 }
 
