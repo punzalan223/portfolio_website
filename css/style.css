@@ -7,7 +7,7 @@
 }
 
 html {
-    width: 100%;
+    
     scroll-behavior: smooth;
     background-color: aliceblue;
 }
@@ -290,7 +290,7 @@ color: #4b4848;
 #my-cv {
 color: #fff;
 text-decoration: none;
-padding: 15px 36px;
+padding: 15px 36.4px;
 background: #03192e;
 border: 1px solid #03192e;
 font-weight: bold;
@@ -332,15 +332,16 @@ width: 450px;
 }
 
 .home-scripts {
-margin-top: 10px;
-height: 100px;
-width: 100%;
-background-color: #03192e;
-transform: skewY(-2deg);
-display: flex;
-align-items: center;
-justify-content: space-around;
-overflow: hidden;
+    margin-top: 10px;
+    height: 100px;
+    width: 100%;
+    background-color: #03192e;
+    transform: skewY(-2deg);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .home-scripts p {
@@ -868,6 +869,35 @@ text-decoration: none;
 
     .home-content-section{
         margin-top: 120px;
+    }
+
+    .home-my-info p{
+        font-size: 26px;
+    }
+
+    #my-cv, #my-project-discussion{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    #my-project-discussion{
+        padding-right: 25px;
+    }
+
+    .header-content h2{
+        font-size: 21px;
+    }
+
+    .about-description #about-me{
+        font-size: 14px;
+    }
+
+    .label-header{
+        font-size: 18px;
+    }
+
+    .my-education ul li p{
+        font-size: 14px;
     }
 }
 
