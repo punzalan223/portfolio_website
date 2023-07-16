@@ -353,6 +353,7 @@ font-size: 15px;
 .social-media-links {
 display: flex;
 margin-top: 35px;
+z-index: -1;
 }
 
 .social-media-links a {
