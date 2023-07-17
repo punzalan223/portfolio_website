@@ -620,10 +620,11 @@ height: 600px;
 max-width: 1200px;
 margin: auto;
 display: flex;
-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-rgba(0, 0, 0, 0.22) 0px 15px 12px;
+/* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+rgba(0, 0, 0, 0.22) 0px 15px 12px; */
 border-radius: 20px 20px 0 0;
 z-index: 1;
+filter: drop-shadow(0 0 0.75rem rgb(28, 72, 138));
 }
 
 .contact-email-header {
@@ -898,9 +899,10 @@ text-decoration: none;
         font-size: 18px;
     }
 
-    .my-education ul li p{
+    .my-education ul li p, .my-relevant-experience ul li p{
         font-size: 14px;
     }
+
 }
 
 @media only screen and (max-width: 450px) {
