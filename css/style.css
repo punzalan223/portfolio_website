@@ -27,7 +27,7 @@ html {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #03192e;
+    background: #636363;
     border-radius: 10px;
 }
 
@@ -72,6 +72,65 @@ html {
     min-height: 100vh;
     width: 100%;
 }
+
+/* Dark Mode */
+
+.dark-mode{
+    position: fixed;
+    bottom: 25px;
+    right: 35px;
+    background-color: #112b42c9;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    cursor: pointer;
+}
+
+/* .dark-mode-moon{
+    background-color: aliceblue !important;
+} */
+
+.dark-mode .icon{
+    color: rgb(255, 255, 255);
+}
+
+.dark-mode-css{
+    background-color: #010a17;
+    color: white;
+}
+
+.dark-mode-logo{
+    color: white !important;
+}
+
+.bg-light{
+    background-color: white;
+    color: black !important;
+}
+
+.border-black{
+    border: 1px solid rgb(255, 255, 255) !important;
+}
+
+.color-l{
+    color: #c2bfc9 !important;
+}
+
+.dark-mode-animation{
+    background-color: rgb(254, 254, 255, 0.87) !important;
+    filter: drop-shadow(0 0 0.75rem rgb(28, 72, 138));
+}
+
+.image-filter{
+    filter: drop-shadow(0 0 0.15rem rgb(255, 255, 255));
+}
+
+
+/* End of Dark mode */
 
 /* Cube Animation */
 .circles {
@@ -235,28 +294,28 @@ margin: 0px 20px;
 }
 
 .a-links ul li a {
-color: #000000;
-text-decoration: none;
-font-size: 17px;
-font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
 }
 
 .a-links ul li a:hover {
-text-decoration: underline;
+    text-decoration: underline;
 }
 
 .contact-me a {
-text-decoration: none;
-font-weight: bold;
-color: black;
-font-size: 17px;
-padding: 8px 25px;
-border: 1px solid black;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 17px;
+    padding: 8px 25px;
+    border: 1px solid black;
 }
 
 .contact-me a:hover {
-color: #fff;
-background-color: black;
+    color: #fff;
+    background-color: black;
 }
 
 /* Home Info Content */
@@ -299,8 +358,9 @@ font-weight: bold;
 }
 
 #my-cv:hover {
-color: black;
-background-color: aliceblue;
+/* color: black;
+background-color: aliceblue; */
+opacity: 0.7;
 }
 
 .home-my-info-btns{
@@ -317,8 +377,10 @@ border: 1px solid black;
 }
 
 #my-project-discussion:hover {
-color: white;
-background-color: black;
+/* color: white;
+background-color: black; */
+opacity: 0.7;
+cursor: pointer;
 }
 
 .home-my-pic {
