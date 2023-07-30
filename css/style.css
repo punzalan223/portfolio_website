@@ -546,6 +546,9 @@ right: 49px;
 .works-content {
     margin: 50px 0;
     position: relative;
+    background-image: url(/img/bg-img.jpg);
+    object-fit: cover;
+    /* background-repeat: no-repeat; */
 }
 
 .works-content::before {
@@ -556,10 +559,10 @@ right: 49px;
     left: 0;
     background: #03192e;
     color: white;
-    transform: skewY(-3deg);
+    /* transform: skewY(-3deg);
     -webkit-transform: skewY(-3deg);
     -moz-transform: skewY(-3deg);
-    -ms-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg); */
 }
 
 .works-content .header-content h2{
@@ -570,7 +573,7 @@ right: 49px;
 .works-img-content{
     max-width: 1600px;
     margin: auto;
-    padding: 150px 20px 0 20px;
+    padding: 150px 20px 70px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -593,7 +596,7 @@ right: 49px;
 
 .img-card-content{
     padding: 20px;
-    background-color: #03192ed3;
+    background-color: #112b42c9;
     color: #ffffff;
 }
 /* Contact Content */
