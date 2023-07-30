@@ -332,6 +332,9 @@
     <script>
 
         $(document).ready(function() {
+
+            $('html').fadeIn('slow');
+
             $('.circles div').each(function() {
                 $(this).css('left', Math.floor(Math.random() * 100) + '%');
             });
