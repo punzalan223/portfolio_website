@@ -14,6 +14,19 @@ html {
     background-color: aliceblue;
 }
 
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1.5s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+}
+
+
+
 /* width */
 ::-webkit-scrollbar {
     width: 13px;
