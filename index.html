@@ -15,6 +15,10 @@
     rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Typewriting effect -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+
 
 <style>
 
@@ -78,9 +82,10 @@
         </div>
         <div class="home-content-section">
             <div class="home-my-info">
-                <p>HI, I'M PATRICK.</p>
+                <div id="output"></div>
+                <!-- <p>HI, I'M PATRICK.</p>
                 <P>A SOFTWARE DEVELOPER</P>
-                <P>BASED IN THE PHILIPPINES</P>
+                <P>BASED IN THE PHILIPPINES</p> -->
                 <span id="home-my-skills">WEB DESIGN * DEVELOPMENT * WEBFLOW</span>
                 <div class="home-my-info-btns">
                     <a id="my-cv" href="/patrick_punzalan__resume.pdf" download>Download my resume</a>
@@ -232,6 +237,16 @@
                     <p style="color: aquamarine;">Company Project</p>
                 </div>
             </div>
+            <div class="img-card">
+                <img src="/img/gis.png" alt="">
+                <div class="img-card-content">
+                    <p>Gashapon System</p>
+                    <p>Deployed: Yes</p>
+                    <p>Website Functionality: Frontend and Backend</p>
+                    <p>Team: Yes</p>
+                    <p style="color: aquamarine;">Company Project</p>
+                </div>
+            </div>
         </div>
     </section>
     <section class="contact-content hidden" id="contact-content">
@@ -337,6 +352,43 @@
     <script>
 
         $(document).ready(function() {
+
+const lines = [
+    "HI, I'M PATRICK.",
+    "A SOFTWARE DEVELOPER",
+    "BASED IN THE PHILIPPINES"
+];
+
+const outputElement = document.getElementById('output');
+
+const typewriter = new Typewriter(outputElement, {
+    autoStart: true,
+    deleteSpeed: Infinity,
+});
+
+lines.forEach((line, index) => {
+    const lineLength = line.length;
+
+    line.split('').forEach((char, charIndex) => {
+        const delay = index === lines.length - 1 && charIndex === lineLength - 1 ? 0 : 20;
+        typewriter.typeString(char);
+    });
+
+    if (index < lines.length - 1) {
+        typewriter.typeString('<br>'); // pause for a new line
+    }
+});
+
+typewriter.start();
+
+
+
+
+            // new Typewriter('#multipleStrings', {
+            // strings: ["HI, I'M PATRICK. A SOFTWARE DEVELOPER BASED IN THE PHILIPPINES"],
+            // autoStart: true,
+            // deleteSpeed: Infinity,
+            // });
 
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {

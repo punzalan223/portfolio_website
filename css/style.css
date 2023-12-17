@@ -342,6 +342,15 @@ max-width: 1500px;
 padding: 0 20px;
 }
 
+#output{
+    font-size: 42px;
+    line-height: 55px;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    width: 100%;
+}
+
 .home-my-info {
 width: 53%;
 }
@@ -957,7 +966,7 @@ text-decoration: none;
         margin-top: 120px;
     }
 
-    .home-my-info p{
+    .home-my-info p, #output{
         font-size: 26px;
     }
 
